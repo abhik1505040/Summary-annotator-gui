@@ -13,7 +13,6 @@ Jinja2==2.10.3
 lxml>=4.2.5
 MarkupSafe==1.1.1
 mixpanel==4.4.0
-numpy==1.17.4
 python-dateutil==2.8.1
 pytz==2019.3
 requests==2.22.0
@@ -24,7 +23,6 @@ urllib3==1.25.7
 wasabi==0.4.2
 Werkzeug==0.16.0
 ordered-set==4.0.2
-orjson>=2.0.11
 rarfile==3.1
 flask_api>=2.0
 pandas>=0.24.0
@@ -37,6 +35,5 @@ flask_wtf==0.14.3
 label-studio-converter>=0.0.20
 htmlmin==0.1.12
 gevent>=20.6.2
-ujson==3.0.0
 Colorama==0.4.4
 boxing==0.1.4
