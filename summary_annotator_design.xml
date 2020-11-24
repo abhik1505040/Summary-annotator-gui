@@ -1,0 +1,43 @@
+<View style="display: flex;">
+  <!-- Text with multi-choices -->
+  <View style="width: 50%; margin-top: 5px; margin-right: 5px; padding: 20px;
+               box-shadow: 2px 2px 8px #AAA; ">
+    <Header value="Article content"/>
+    <View style="margin-top: 2px; height: 600px; overflow: auto;">
+    	<Text name="content" value="$content" />
+  	</View>
+  </View>
+  <View style="width: 50%">
+    <!--Header box-->
+    <View style="margin-top: 5px; padding: 20px;
+               box-shadow: 2px 2px 8px #AAA;">
+      <Header value="Article header"/>
+      <Text name="header" value="$header" />
+    </View>
+    <!--Summary box-->
+    <View style="margin-top: 5px; padding: 20px;
+               box-shadow: 2px 2px 8px #AAA;">
+      <Header value="Article summary"/>
+      <Text name="summary" value="$summary" />
+    </View>
+    <!-- Question box -->
+    <View style="background-image: linear-gradient(#FDFC96, #E4F785); margin-top: 5px; padding: 20px;
+               box-shadow: 2px 2px 8px #AAA;">
+      <Header value="Quality of the above summary?"/>
+      <Choices name="choices" toName="summary"
+               choice="single">
+        <Choice alias="good" value="Good"/>
+        <Choice alias="acceptable" value="Not bad"/>
+        <Choice alias="bad" value="Horrible"/>
+      </Choices>
+    </View>
+    <View style="background-image: linear-gradient(#fdfcfb, #e2d1c3); margin-top: 5px; padding: 20px;
+               box-shadow: 5px 5px 8px #AAA;">
+      <Header value="Summary input (optional)" />
+      <TextArea name="answer" toName="content"
+                showSubmitButton="true" maxSubmissions="1" editable="true"
+                required="false" />
+    </View>
+  </View>
+</View>
+
