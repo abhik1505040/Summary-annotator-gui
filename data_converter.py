@@ -1,6 +1,6 @@
 import json
 
-def doc_iter(jsonl_file='bbc_data_original.jsonl'):
+def doc_iter(jsonl_file='data.sample.jsonl.japanese'):
     with open(jsonl_file) as f:
         for line in f:
             doc = json.loads(line.strip())
@@ -20,5 +20,5 @@ if __name__ == "__main__":
         }
         data.append(obj)
 
-    with open('./bbc_data.json', 'w') as f:
+    with open('./bbc_japanese.json', 'w') as f:
         json.dump(data, f, indent=4, ensure_ascii=False)
