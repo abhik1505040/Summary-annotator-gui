@@ -6,9 +6,9 @@
 # python setup.py install
 
 # # download data from drive
-# gdrive_id="1x069OsRQilftT2G9_Lh4Le0Ti6Nu1cXv"
+# gdrive_id=""
 out_name="bbc_japanese.json"
-# wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=1HlzTR1-YVoBPlXo0gMFJ_xY4ogMnfzDi' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=${gdrive_id}" -O ${out_name} && rm -rf /tmp/cookies.txt
+# wget --load-cookies /tmp/cookies.txt "https://docs.google.com/uc?export=download&confirm=$(wget --quiet --save-cookies /tmp/cookies.txt --keep-session-cookies --no-check-certificate 'https://docs.google.com/uc?export=download&id=' -O- | sed -rn 's/.*confirm=([0-9A-Za-z_]+).*/\1\n/p')&id=${gdrive_id}" -O ${out_name} && rm -rf /tmp/cookies.txt
 # npm install -g localtunnel
 
 # set up project
